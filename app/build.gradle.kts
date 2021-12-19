@@ -52,6 +52,7 @@ dependencies {
     implementation(Compose.material)
     implementation(Compose.tooling)
     implementation(Compose.navigation)
+    implementation(Compose.accompanist)
 
     implementation(Dagger.dagger)
     kapt(Dagger.daggerCompiler)
@@ -64,4 +65,6 @@ dependencies {
     implementation(project(Modules.main_screen))
     implementation(project(Modules.details))
     implementation(project(Modules.search))
+
+    implementation(Network.retrofit)
 }

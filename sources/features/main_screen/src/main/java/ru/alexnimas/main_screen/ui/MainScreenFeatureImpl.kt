@@ -17,8 +17,9 @@ class MainScreenFeatureImpl @Inject constructor() : MainScreenFeature {
         navController: NavController
     ) {
         val vm = viewModel as MainScreenViewModel
+        val weather = vm.state
         Text(
-            text = vm.text,
+            text = weather.value,
             modifier = Modifier.clickable {
                 navController.navigate(NavigationDestination.Search.destination)
             }

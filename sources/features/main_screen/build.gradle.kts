@@ -50,4 +50,7 @@ dependencies {
     implementation(Dagger.dagger)
     kapt(Dagger.daggerCompiler)
     kapt(Dagger.daggerAnnotaionProcessor)
+
+    implementation(Network.retrofit)
+    implementation(Network.gson)
 }

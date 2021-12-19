@@ -19,18 +19,12 @@ android {
             isMinifyEnabled = false
         }
     }
-    buildFeatures {
-        compose = true
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = Compose.composeVersion
     }
     packagingOptions {
         exclude("META-INF/AL2.0")
@@ -40,4 +34,13 @@ android {
 
 dependencies {
     api(project(Modules.core_api))
+
+    implementation(Dagger.dagger)
+    kapt(Dagger.daggerCompiler)
+    kapt(Dagger.daggerAnnotaionProcessor)
+
+    implementation(Network.retrofit)
+    implementation(Network.gson)
+    implementation(Network.coroutinesAdapter)
+    implementation(Network.loggingInterceptor)
 }

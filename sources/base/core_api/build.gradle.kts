@@ -41,5 +41,8 @@ android {
 dependencies {
     implementation(Compose.ui)
     implementation(Compose.navigation)
+
     implementation(AndroidX.lifecycleVmKtx)
+
+    implementation(Network.retrofit)
 }
