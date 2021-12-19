@@ -8,3 +8,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "NimasWeatherApp"
 include ':app'
+include ':sources:features:main_screen'
+include ':sources:features:search'
+include ':sources:features:details'
+include ':sources:base:core'
+include ':sources:base:core_api'
+include ':sources:base:core_impl'

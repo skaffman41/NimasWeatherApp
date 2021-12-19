@@ -10,8 +10,8 @@ object Compose {
     private const val navigationVersion = "2.4.0-alpha04"
     const val navigation = "androidx.navigation:navigation-compose:$navigationVersion"
 
-    private const val hiltNavigationComposeVersion = "1.0.0-alpha03"
-    const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:$hiltNavigationComposeVersion"
+    private const val lifecycle_version = "2.4.0"
+    const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
 }
 
 object ComposeTest {
